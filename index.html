@@ -1,38 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Genius Assignment 5</title>
     <link rel="stylesheet" href="style/makeup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
-      <h1>hello</h1>
-
-      
-
+  <body  class="font-family: 'Inter', sans-serif;">
+    <header class="shadow-2xl lg:px-12">
+       
+        <div class="navbar rounded my-5 bg-cyan-200 ">
+            <div class="navbar-start">
+                <div>
+                    <h1 class="logo"> Interactive</h1>
+                    <h3 class="logo-litle">Geometry Genius</h3>
+                </div>
+                
+            </div >
+            <div class="navbar-end ">
+              <a class="btn h-7 ">Blogs</a>
+            </div>
+          </div>
+        
     </header>
     <main>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+            <div
+          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+
+
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+              <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) = 0.5 x b x h</p>
+              <div class="flex w-50 h-88"> 
+              <input type="number" placeholder="b" class="input input-bordered w-35 max-w-xs" />
+              <p>cm</p>
+              <input type="number" placeholder="h" class="input input-bordered w-35 max-w-xs" />
+              <p>cm</p>
+            </div>
+              <div class=" card-actions">
+                <button class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
+
+
+
+        </div>
+        <div class="calculation">
+
+        </div>
+        </section>
     </main>
     <script src="JS/cards.js"></script>
   </body>
