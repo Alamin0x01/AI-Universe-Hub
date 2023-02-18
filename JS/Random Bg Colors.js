@@ -1,3 +1,10 @@
+// const quote = document.getElementById("colorful-quote");
+//   quote.addEventListener("mousemove", function() {
+//     const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+//     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     quote.style.color = randomColor;
+//   });
+
 const background = document.getElementById("Random-Bg-Color");
 
 const getRandomNumber = (limit) => {

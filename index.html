@@ -16,7 +16,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head> 
   <body id="Random-Bg-Color" class="font-family: 'Inter', sans-serif;">
-    <header class=" lg:px-12">
+    <header  class=" lg:px-12">
        
         <div class="navbar rounded my-1 bg-sky-400 ">
             <div class="navbar-start">
@@ -32,14 +32,14 @@
           </div>
         
     </header>
-    <main>
+    <main >
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
             <div
           class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
 
 <!--! first-card -->
-        <div class="card card-compact w-full bg-base-100 shadow-xl">
+        <div  class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
@@ -80,67 +80,72 @@
             </div>
           </div>
 
-
+<!--! 3rd-card -->
 
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Parallelogram</h2>
+              <h2 id="3rd-title" class="card-title">Parallelogram</h2>
               <p>Area (A) = b x h</p>
 
-              <p>b=10cm, h=12cm</p>
+              <p>b=<span id="3b">10</span> cm, h=<span id="3h">12</span>cm</p>
+              
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button id="3rd-btn" class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
+
+<!--! 4th-card -->
+
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/rhombus.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rhombus</h2>
+              <h2 id="4th-title" class="card-title">Rhombus</h2>
               <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
-              
-              <p>d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</p>
+              <p>d<sub>1</sub>=<span id="4d1-number">16cm</span>, d<sub>2</sub>=<span id="4d2-number">8</span> cm</p>
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button id="4th-btn" class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
+
+          <!--! 5th-card -->
+
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/pentagon.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Pentagon</h2>
+              <h2 id="5th-title" class="card-title">Pentagon</h2>
               <p>Area (A) = 0.5 X p X h</p>
 
-              <p>p = 6cm, b = 10cm</p>
+              <p>p =<span id="5th-p">6</span>cm, b =<span id="5th-b">10</span>cm</p>
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button id="5th-btn" class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
+          
+          <!--! last-card -->
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/ellipse.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Ellipse</h2>
+              <h2 id="last-title" class="card-title">Ellipse</h2>
               <p>Area (A) =πab</p>
 
-              <p>b=10cm h=12cm</p>
+              <p>b=<span id="last-b">10</span>cm h=<span id="last-h">12</span>cm</p>
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button id="last-btn" class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
-
-
-
         </div>
          <!-- Area Calculation -->
          <div class="cart-details w-full bg-red-100 rounded-badge md:w-[40%] lg:w-[40%] mx-auto">
@@ -149,7 +154,14 @@
             </h1>
             <div class="overflow-x-auto">
               <table class="table w-full">
-                
+                <thead class="p-40">
+                    <tr>
+                      <th>No</th>
+                      <th>Name</th>
+                      <th>Area</th>
+                      <th>Convertor</th>
+                    </tr>
+                  </thead>
                 <tbody id="table-container">
                  
                 </tbody>
@@ -160,6 +172,7 @@
         </section>
         
     </main>
-    <script src="JS/cards.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/Random Bg Colors.js"></script>
   </body>
 </html>
