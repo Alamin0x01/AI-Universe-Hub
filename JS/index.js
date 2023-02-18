@@ -6,13 +6,15 @@ document.getElementById("first-btn").addEventListener("click", function () {
   const inputData1 = document.getElementById("first-input").value;
   const inputData2 = document.getElementById("second-input").value;
   const ph = 0.5;
+  
   if (
     inputData1 == "" ||
     inputData2 == "" ||
     inputData1 <= 0 ||
     inputData2 <= 0
   ) {
-    return alert("please enter any valid number");
+    
+    return alert("Please enter any valid number");
   }
   const total = parseInt(inputData1) * parseInt(inputData2) * ph;
   //   show the data using function
@@ -117,7 +119,6 @@ function displayData(titleName, total) {
       <td>
       <button class="btn btn-sm btn-red-200">Covert to m<sup>2</sup></button>
       </td>
-      
     `;
   container.appendChild(tr);
 }
@@ -126,3 +127,19 @@ function displayData(titleName, total) {
 function disabledButton(id) {
   document.getElementById(id).setAttribute("disabled", true);
 }
+
+
+// // common function to get data using getElementById method
+// function getData(id1, id2, id3) {
+//   // get the data from htm using id
+//   const titleName = document.getElementById(id1).innerText;
+//   const inputData1 = document.getElementById(id2).innerText;
+//   const inputData2 = document.getElementById(id3).innerText;
+
+//   const pd = {
+//     titleName: titleName,
+//     inputData1: inputData1,
+//     inputData2: inputData2,
+//   };
+//   return pd;
+// }
