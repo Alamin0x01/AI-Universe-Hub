@@ -38,45 +38,50 @@
           class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
 
-
+<!--! first-card -->
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Triangle</h2>
+              <h2 id="first-title" class="card-title">Triangle</h2>
               <p>Area (A) = 0.5 x b x h</p>
 
               <div class="flex "> 
-              <input type="" placeholder="b" class="input input-bordered w-20" />
+              <input id="first-input" type="" placeholder="b" class="input input-bordered w-20" />
               <p class="pt-3"> cm</p>
-              <input type="" placeholder="h" class="input input-bordered w-20" />
+              <input id="second-input" type="" placeholder="h" class="input input-bordered w-20" />
               <p class="pt-3"> cm</p>
             </div>
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button class="btn btn-primary w-60 " id="first-btn" >Calculate</button>
               </div>
             </div>
           </div>
+
+<!--! 2nd-card -->
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/rectangle.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangle</h2>
+              <h2 id="2nd-title" class="card-title">Rectangle</h2>
               <p>Area (A) = w x I</p>
 
               <div class="flex "> 
-              <input type="" placeholder="w" class="input input-bordered w-20" />
+              <input id="2nd-input" type="" placeholder="w" class="input input-bordered w-20" />
               <p class="pt-3"> cm</p>
-              <input type="" placeholder="i" class="input input-bordered w-20" />
+              <input id="2nd-input" type="" placeholder="i" class="input input-bordered w-20" />
               <p class="pt-3"> cm</p>
             </div>
               <div class=" card-actions">
-                <button class="btn btn-primary w-60 ">Calculate</button>
+                <button id="2nd-btn" class="btn btn-primary w-60 ">Calculate</button>
               </div>
             </div>
           </div>
+
+
+
         <div class="card card-compact w-full bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="./images/parallelogram.png" alt="Shoes" class="rounded-xl" />
@@ -138,7 +143,7 @@
 
         </div>
          <!-- Area Calculation -->
-         <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+         <div class="cart-details w-full bg-red-100 rounded-badge md:w-[40%] lg:w-[40%] mx-auto">
             <h1 class="text-2xl text-center font-bold underline mt-5">
                 Area Calculation
             </h1>
@@ -153,8 +158,6 @@
           </div>
       
         </section>
-
-     
         
     </main>
     <script src="JS/cards.js"></script>
